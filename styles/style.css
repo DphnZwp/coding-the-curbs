@@ -1,0 +1,247 @@
+:root {
+	--dark-blue: #110f2a ;
+  --blue: #524dd0;
+  --cyan: #00ffec;
+  --gradient: linear-gradient(to right, #524dd0, #84389e);
+  --white: #fff;
+  --black: #000;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: grid;
+    grid-template-columns: 300px repeat(12, 1fr);
+    grid-template-rows: 60px 1fr;
+    min-height: 100vh;
+    background-color: var(--color-white);
+    font-family: 'Rajdhani', sans-serif;
+  }
+  
+  ul {
+    margin-left: 2rem;
+  }
+  
+  section > ul {
+    margin-bottom: 1.5em;
+  }
+  
+  header {
+    grid-column: 1/14;
+    background-color: var(--color-white);
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+  }
+  
+  main {
+    grid-column: 2/14;
+    grid-row: 2/13;
+    padding-left: 10rem;
+  }
+  
+  aside {
+		position: fixed;
+		color: var(--white);
+		background-color: var(--blue);
+    grid-column: 1/2;
+    grid-row: 2/13;
+  }
+  
+  aside > div {
+    top: 0;
+    text-align: right;
+    padding: 2rem 3rem 0 3rem;
+		height: 100vh;
+  }
+  
+  aside > div h1 {
+    margin-bottom: 2rem;
+  }
+  
+  summary {
+    list-style: none;
+    cursor: pointer;
+    user-select: none;
+    font-size: 1.2rem;
+    color: var(--color-primary);
+    margin-bottom: 2rem;
+  }
+  
+  summary::after {
+    content: "\203A";
+    font-size: 1rem;
+    position: relative;
+    left: 0.5rem;
+  }
+
+  details[open] summary:after {
+    content: "\02C7";
+		font-size: 1.5rem;
+  }
+  
+  details > ul {
+    list-style: none;
+    position: relative;
+    top: -2rem;
+  }
+  
+  details > ul li a {
+    color: var(--white);
+  }
+
+	h2 {
+		color: var(--blue);
+		margin-bottom: 1rem;
+	}
+  
+  .color-row {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .color > div {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #bbb;
+  }
+  
+  .blue {
+    background-color: var(--blue);
+  }
+  
+  .cyan {
+    background-color: var(--cyan);
+  }
+  
+  .dark-blue {
+    background-color: var(--dark-blue);
+  }
+  
+  .gradient {
+    background-image: var(--gradient);
+  }
+
+  .typography {
+    margin-bottom: 1.5rem;
+  }
+  
+  .fake-heading.h1 {
+  font-weight: 700;
+  line-height: 1.1;
+  font-size: 6.25rem;
+  color: var(--text-color);
+  }
+  
+  .fake-heading.h2 {
+    font-weight: 600;
+    line-height: 1.1;
+    font-size: 3.125rem;
+    color: var(--text-color);
+  }
+  
+  .fake-heading.h3 {
+    font-weight: 600;
+    font-size: 1.5625rem;
+    color: var(--text-color);
+  }
+  
+  .fake-paragraph.big {
+    font-weight: 500;
+    font-size: 25px;
+  }
+  
+  .fake-paragraph.small {
+    font-weight: 500;
+    line-height: 1.4;
+    font-size: 1.1875rem;
+    color: var(--text-color);
+  }
+
+	#icons>p {
+		font-size: 4rem;
+	}
+  
+  .button-row {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  button {
+    all: unset;
+    cursor: pointer;
+  }
+  
+  .cta-gradient {
+    font-weight: 500;
+    padding: 0.7em 3em;
+    background-image: var(--gradient);
+    border-radius: 2em;
+  }
+
+	.cta-gradient:hover {
+		background: white;
+		box-shadow: inset 0px 0px 0px 2px var(--blue);
+	}
+
+	.cta-gradient a {
+		text-decoration: none;
+		color: var(--white);
+	}
+	
+	.cta-gradient:hover a {
+		color: var(--blue);
+	}
+
+	.cta-gradient-arrow {
+    font-size: 4rem;
+    display: block;
+    height: 0.6em;
+    padding: 0 0.5em;
+    background-image: var(--gradient);
+    color: var(--white);
+    border-radius: 0 0 2em 2em;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  #links {
+    padding-bottom: 2rem;
+  }
+  
+  a {
+		color: var(--text-color);
+		font-weight: 500;
+		text-decoration: none;
+	}
+	
+	.hover-color:hover, .hover-color:hover {
+		color: var(--blue);
+	}
+
+	#images>img {
+		width: 30%;
+	}
+
+	#logo>img {
+		width: 50%;
+	}
+
+	#logo>div>img {
+		width: 50%;
+	}
+
+	#logo>div {
+		background-color: var(--dark-blue);
+	}
+
